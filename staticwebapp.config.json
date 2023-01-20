@@ -1,0 +1,14 @@
+{
+  "networking": {
+    "allowedIpRanges": ["AzureFrontDoor.Backend"]
+  },
+  "forwardingGateway": {
+    "requiredHeaders": {
+      "X-Azure-FDID" : "[Front Door ID]"
+    },
+    "allowedForwardedHosts": [
+      "[Custom domain name]",
+      "[Front Door Endpoint hostname]"
+    ]
+  }
+}
